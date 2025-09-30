@@ -13,4 +13,6 @@ spring:
     url: \
     user: \
     password: \
+server:
+  port: 8082
 

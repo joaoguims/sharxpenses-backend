@@ -1,10 +1,5 @@
-/target
-/*.jar
+﻿target/
+.idea/
 *.iml
-/.idea/
-/.vscode/
-/out/
-/logs/
-*.class
-.DS_Store
-/application-*.yml
+*.log
+.env

@@ -1,18 +1,13 @@
-spring:
+ï»¿spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/sharxpenses_dev
+    url: jdbc:mysql://localhost:3306/sharxpenses_dev?useSSL=false&serverTimezone=UTC
     username: dev
     password: devpass
-    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: none # Flyway gerencia o schema, Hibernate não deve tocar
+      ddl-auto: validate
     properties:
-      hibernate.dialect: org.hibernate.dialect.MySQLDialect
-  flyway:
-    url: \
-    user: \
-    password: \
-server:
-  port: 8082
+      hibernate.format_sql: true
 
+flyway:
+  enabled: true
